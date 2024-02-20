@@ -8,8 +8,10 @@ print(parser.parse_args());
 
 'Get username from argparse'
 user = args["username"]
+print(user)
 'Get Password from argparse'
 passwd = args["password"]
+print(passwd)
 
 
 
@@ -24,9 +26,7 @@ except:
 try:
     import recnetlogin as rnl
 except:
-    print('''You do not have the RecNetLogin package installed, you need to install it via the following command:
-        python -m pip install git+https://github.com/Jegarde/RecNet-Login.git#egg=recnetlogin
-    Thank you!''')
+    print('''You do not have the RecNetLogin package installed, does the recnetlogin folder exist?''')
 
 ''' Just Initializing some values '''
 login = rnl.login_to_recnet(username=user,password=passwd)
