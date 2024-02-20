@@ -1,1 +1,1 @@
-from .client import RecNetLogin
+from .login import login_to_recnet
