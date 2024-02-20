@@ -4,11 +4,12 @@ parser.add_argument('-u','--username', help='RecNet Username', required=True)
 parser.add_argument('-p','--password', help='RecNet Password', required=True)
 args = vars(parser.parse_args())
 
+print(parser.parse_args());
 
 'Get username from argparse'
-user = args.username
+user = args["username"]
 'Get Password from argparse'
-passwd = args.password
+passwd = args["password"]
 
 
 
